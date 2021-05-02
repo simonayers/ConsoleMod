@@ -22,7 +22,7 @@ size_t CircularLineBuffer_getCurrentNumOfLines(const CircularLineBuffer * const 
 size_t CircularLineBuffer_writeNextLine(const char * const line, CircularLineBuffer * const buffer)
 {
    const size_t BUFFER_FULL_OR_ERROR = 0;
-   const size_t ONE_LINE_WRITTEN = 0;
+   const size_t ONE_LINE_WRITTEN = 1;
 
    if (CircularLineBuffer_getCurrentNumOfLines(buffer) >= CIRCULAR_LINE_BUFFER__NUM_OF_LINES) {
       return BUFFER_FULL_OR_ERROR;
