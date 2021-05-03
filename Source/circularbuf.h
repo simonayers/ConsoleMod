@@ -19,7 +19,7 @@ typedef volatile struct {
    char buffer[CIRCULAR_LINE_BUFFER__NUM_OF_LINES][CIRCULAR_LINE_BUFFER__CHRS_PER_LINE];
 } CircularLineBuffer;
 
-
+void CircularLineBuffer_initialiseBuffer(CircularLineBuffer * buffer);
 size_t CircularLineBuffer_getCurrentNumOfLines(const CircularLineBuffer * const buffer);
 size_t CircularLineBuffer_writeNextLine(const char * const line, CircularLineBuffer * const buffer);
 const char * CircularLineBuffer_readNextLine(CircularLineBuffer * const buffer);
