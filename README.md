@@ -50,8 +50,8 @@ is 255 characters + NULL character.
 
 ### On exit
 
-- __R0__ - Number of bytes copied.  This will be zero if no bytes are
-     copied due to the line buffer being full.
+- __R0__ - 1 if the line was copied (up to 255 chars + NULL termination) 
+           or 0 if the buffer was full.
 
 
 
