@@ -20,8 +20,18 @@ not receive any more lines of data.
 - N/A
 
 ### On exit
-- __R0__ - 1 if the line buffer is full or 0 if it is empty.
+- __R0__ - 1 if the line buffer is full or 0 if it is not full.
 
+
+## Console_GetEmpty
+
+This returns whether the console line buffer is empty.
+
+### On entry
+- N/A
+
+### On exit
+- __R0__ - 1 if the line buffer is empty or 0 if it is not empty.
 
 
 ## Console_ClearLines
